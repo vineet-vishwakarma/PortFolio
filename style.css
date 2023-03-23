@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ff004f;
+    --secondary-color:  #950740;
+    --accent-color: #6F2232;
+    --accent-color-dark: #4E4E50;
+    --bg-color: #1A1A1D;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Popins',sans-serif;
+    color: #f1f1f1ff;
+    background-color: var(--bg-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+    line-height: 1.8rem;
+}
+
+a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.hover-link{
+    color: #f1f1f1ff;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover{
+    color: var(--primary-color);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-6px);
+    font-size: 22px;
+}
+
+.bg-img{
+    background: url(Bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+i{
+    font-size: 100px;
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* -----------Utility Class------------ */
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+.sub-heading{
+    text-align: center;
+    margin-block: 30px;
+    font-family: 'PlayFair';
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* ----------Navigation Bar------------ */
+
+.main-nav{
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.nav-link{
+    flex-basis: 730px;
+}
+
+.nav-link ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+/* ---------Hero Section----------- */
+
+header{
+    padding: 50px var(--padding-inline-section);
+} 
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.name{
+    margin-top: 15px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+}
+
+.text-1{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.static-text{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.dynamic-text{
+    /* height: 90px;  */
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--primary-color);
+    position: relative;
+} 
+
+.btn{
+    margin: 30px 0; 
+    width: fit-content;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #f1f1f1;
+    box-shadow: 2px 2px 2px var(--accent-color),-2px -2px 2px var(--secondary-color);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: none;
+    color: var(--primary-color);
+}
+
+/* -----Header Right----- */
+
+.header-right img{
+    width: 600px;
+    position: relative;
+    animation: heroanimation 4s infinite alternate;
+}
+
+@keyframes heroanimation{
+    0%{
+        transform: translate(30px,-90px);
+    }
+    25%{
+        transform: translate(20px,0px);
+    }
+    50%{
+        transform: translate(20px,20px);
+    }
+    75%{
+        transform: translate(0px,20px);
+    }
+}
+
+
+/* --------- About Section ----------- */
+
+.about{
+    padding: 100px var(--padding-inline-section);
+    background: url(Bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin-block: 60px;
+    margin-inline: 20%;
+    background: none;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(Bg1.jpg);
+    box-shadow: 20px 20px 10px #6F2232,20px 20px 20px var(--primary-color);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle:before{
+    clip-path: circle(400px at center);
+    box-shadow: 20px 20px 10px #6F2232,-20px -20px 20px var(--primary-color);
+}
+
+.card img{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    left: 100%;
+}
+
+.card .content img{
+    position: relative;
+    width: 200px;
+    transform: translate(-280px,0px);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.content p{
+    font-family: 'Playfair';
+    font-weight: 100;
+    transform: translate(0px,0px);
+}
+
+.card:hover .content{
+    left: 2%;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* -----------------Skills Section--------------------- */
+
+.skills{
+    padding: 100px var(--padding-inline-section);
+    background: url(Bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.skills-area{
+    justify-content: flex-start;
+    position: relative;
+    gap: 40px;
+    border-top: 2px solid rgba(245, 222, 179, 0.255);
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-top: 3vmax;
+    padding-bottom: 2vmax;
+    padding-left: 10px;
+    margin: 0 auto;
+    -webkit-transition: all;
+    transition: all;
+}
+
+.skills-card{
+    /* max-width: 30%; */
+    text-align: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.skills-card h2{
+    margin-block: 10px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skills-card div{
+    display: block;
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.skills-card div:hover{
+    background: var(--primary-color);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-10px);
+}
+
+.skills-card img{
+    width: 100px;
+}
+
+
+::-webkit-scrollbar {
+    height: 2px;
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #aa00aa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: fuchsia;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: fuchsia;
+}
+  
+.bar{
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: lpx 3px rgba( 0,0,0,0.12),rgba(0, 0, 0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 10px;
+    float: left;
+    background: linear-gradient(135deg,rgba(236,0,140,1)0%, rgba(252,103,103,1)100%)
+}
+
+.skills-card div:hover .html{
+    width: 90%;
+    animation: html 0.5s;
+}
+
+.skills-card div:hover .css{
+    width: 70%;
+    animation: css 0.5s;
+}
+
+.skills-card div:hover .js{
+    width: 50%;
+    animation: js 0.5s;
+}
+
+.skills-card div:hover .cpp{
+    width: 90%;
+    animation: cpp 0.5s;
+}
+
+.skills-card div:hover .python{
+    width: 40%;
+    animation: python 0.5s;
+}
+
+.skills-card div:hover .flutter{
+    width: 10%;
+    animation: flutter 0.5s;
+}
+
+.skills-card div:hover .dart{
+    width: 10%;
+    animation: dart 0.5s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes cpp {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes flutter {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+@keyframes dart {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+.swipe{
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    justify-content: center;
+    margin-inline: 10px;
+    margin-block: 10px;
+}
+
+.arrow{
+    font-size: 20px;
+    margin-inline: 10px;
+    animation: blink 0.5s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/* -------------------------- Project Section ---------------------------- */
+
+.projects{
+    padding: 100px var(--padding-inline-section);
+    background: url(Bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.project-heading {
+    margin-block: 20px;
+  }
+
+.project-area{
+    justify-content: space-between;
+    position: relative;
+    gap: 40px;
+    border-top: 2px solid rgba(245, 222, 179, 0.255);
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-top: 3vmax;
+    padding-bottom: 2vmax;
+    padding-left: 10px;
+    margin: 0 auto;
+    -webkit-transition: all;
+    transition: all;
+}
+
+.project-card{
+    text-align: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px,5fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project-card img{
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.project-card:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.project-card div{
+    margin-top: 15px;
+}
+
+/* -------------------------- Projects Section-2 ---------------------------- */
+
+.Project{
+    padding: 100px var(--padding-inline-section);
+    background: url(Bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.project-heading {
+    padding-top: 0px;
+    margin-block: 10px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.wrapper, .single-card {
+	height: 450px;
+	max-width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+.wrapper {
+	perspective: 900px;
+}
+.single-card {
+	text-align: center;
+	transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+	transform-style: preserve-3d;
+}
+.wrapper:hover .single-card {
+	transform: rotateY(180deg);
+}
+.front, .back {
+	width: 300px;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.front {
+	cursor: pointer;
+	height: 100%;
+	background-image: url(Bg1.jpg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center center;
+}
+.back {
+	transform: rotateY(180deg);
+	position: absolute;
+	border-radius: 50px;
+	height: 450px;
+	background: rgba(0, 0, 0, 0.1);
+}
+.content {
+	padding-top: 25%;
+}
+.content h2 {
+	font-size: 35px;
+	margin: 0;
+	font-weight: 300;
+}
