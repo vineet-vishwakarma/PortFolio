@@ -1,0 +1,39 @@
+
+@media screen and (max-width:960px){
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .main-nav{
+        overflow: initial;
+    }
+
+    .nav-link{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 40px;
+        z-index: 9;
+        transition: 0.2s ease-in-out;
+        backdrop-filter: blur(8px);
+    }
+
+    .nav-link.active{
+        left: 0;
+    }
+
+    .nav-link ul{
+        flex-direction: column;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left,.name{
+        text-align: center;
+    }
+}
