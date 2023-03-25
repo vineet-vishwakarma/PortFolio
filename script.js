@@ -1,3 +1,12 @@
+// Hamburger Toggle
+
+const toggleButton = document.getElementById('nav-toggle');
+const navLink = document.getElementById('nav-link');
+
+toggleButton.addEventListener('click', () => {
+    navLink.classList.toggle('active')
+})
+
 // Dynamic Text Animation
 
 var typed = new Typed(".dynamic-text",{
