@@ -70,7 +70,7 @@ ul{
 }
 
 .bg-img{
-    background: url(/Assests/Bg3.jpg);
+    background: url(Assests/Bg3.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -220,7 +220,7 @@ header{
 
 .about{
     padding: 100px var(--padding-inline-section);
-    background: url(/Assests/Bg2.jpg);
+    background: url(Assests/Bg2.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -253,7 +253,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(/Assests/Bg1.jpg);
+    background: url(Assests/Bg1.jpg);
     box-shadow: 20px 20px 10px #6F2232,20px 20px 20px var(--primary-color);
     clip-path: circle(120px at center);
     transition: 0.5s;
@@ -311,7 +311,7 @@ header{
 
 .skills{
     padding: 100px var(--padding-inline-section);
-    background: url(/Assests/Bg1.jpg);
+    background: url(Assests/Bg1.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -529,7 +529,7 @@ header{
 
 .projects{
     padding: 100px var(--padding-inline-section);
-    background: url(/Assests/Bg2.jpg);
+    background: url(Assests/Bg2.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -583,7 +583,7 @@ header{
 
 .Project{
     padding: 100px var(--padding-inline-section);
-    background: url(/Assests/Bg1.jpg);
+    background: url(Assests/Bg1.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -644,7 +644,7 @@ header{
 .front {
 	cursor: pointer;
 	height: 100%;
-	background-image: url(/Assests/Bg1.jpg);
+	background-image: url(Assests/Bg1.jpg);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	border-radius: 50px;
