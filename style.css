@@ -87,6 +87,7 @@ i{
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 
 .flex{
@@ -106,6 +107,7 @@ i{
 
 .main-nav{
     justify-content: space-between;
+    position: relative;
 }
 
 .logo img{
@@ -120,6 +122,14 @@ i{
 .nav-link ul{
     justify-content: end;
     gap: 40px;
+}
+
+.nav-toggle i{
+    font-size: 30px;
+}
+
+.nav-toggle{
+    display: none;
 }
 
 /* ---------Hero Section----------- */
